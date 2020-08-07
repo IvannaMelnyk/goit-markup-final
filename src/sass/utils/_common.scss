@@ -1,0 +1,63 @@
+body {
+  background-color: $light-bg-color;
+  font-family: 'Open Sans', sans-serif;
+  color: $primary-text-color;
+  letter-spacing: 0.03em;
+}
+
+@font-face {
+  font-family: Raleway; /* Гарнитура шрифта */
+  src: url(../fonts/Raleway-Bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+// body.modal-open {
+//   overflow: hidden;
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   color: $dark-color;
+// }
+
+// a,
+// button {
+//   transition: color 250ms $cubic, background-color 250ms $cubic;
+// }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 31px;
+  padding-left: 31px;
+  min-width: 280px;
+  // background-color: rgb(72, 236, 135);
+  @media screen and (min-width: $min-mobile) and (max-width: $max-tablet) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $min-tablet) and (max-width: $max-desktop) {
+    width: 768px;
+    padding-right: 39px;
+    padding-left: 39px;
+  }
+
+  @media screen and (min-width: $min-desktop) {
+    width: 1280px;
+    padding-right: 55px;
+    padding-left: 55px;
+  }
+}
+
+.center {
+  text-align: center;
+}
